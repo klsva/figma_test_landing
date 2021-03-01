@@ -4,10 +4,10 @@ import '@fortawesome/fontawesome-free/js/solid'
 import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import './js/img'
-//import * as $ from 'jquery'
+import * as $ from 'jquery'
 import 'slick-carousel'
 
-//func places hero <img> in hero background-image 
+//func places <img> in background-image 
 function ibg(){
     let ibg = document.querySelectorAll('.ibg');
     for (let elem of ibg) {
@@ -19,9 +19,22 @@ function ibg(){
 }
 ibg();
 
-//func animates burger menu lines/cross
-document.querySelector('.icon-submenu').addEventListener("click", ()=> {
-    document.querySelector('.icon-submenu').classList.toggle('active');
-    document.querySelector('.submenu__body').classList.toggle('active');
-    document.querySelector('.submenu__list').classList.toggle('hidden');    
+$( document ).ready(function() {
+    //func animates burger menu lines/cross
+    $('.icon-submenu').on("click", function(){
+        $('.icon-submenu').toggleClass('active');
+        $('.submenu__body').toggleClass('active');
+        $('.submenu__list').toggleClass('hidden');
+
+    });
+
+    //func accordion
+    $('#accordion > div').hide();
+    $('.accordion__title').on("click", function(){
+        $(this).toggleClass('active'); 
+        $(this).next('div').slideToggle('.accordion__text');
+    });
 });
+
+
+

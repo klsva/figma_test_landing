@@ -1,3 +1,7 @@
 import '../img/logo.png'
 import '../img/bg-hero.jpg'
 import '../img/big-projects.jpg'
+import '../img/gallery-img.jpg'
+import '../img/polygon.png'
+import '../img/partners-logo.png'
+import '../img/sign.png'
