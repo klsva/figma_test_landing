@@ -660,3 +660,101 @@ body {
     margin-bottom: 100px;
 }
 /*REQUEST SECOND styles end*/
+
+/*CONTACTS styles start*/
+.contacts {
+    margin-bottom: 150px;
+
+    // .contacts__title
+    &__title {
+        margin-bottom: 60px;
+    }
+
+    // .contacts__content
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    // .contacts__block
+    &__block {
+        width: 22.972%;
+        //text-align: center;
+    }
+}
+
+.block-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    // .block-contact__icon
+    &__icon {
+        position: relative;
+        width: 49px;
+        height: 49px;        
+        margin-bottom: 26px;
+        img {
+            margin: 0;
+            transform: translate(-50%, -50%);
+            position: absolute; 
+            top: 50%; 
+            left: 50%;
+        }
+    }
+
+    // .block-contact__title
+    &__title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        //text-align: center;
+        color: #999999;
+        margin-bottom: 25px;
+    }
+
+    // .block-contact__text
+    &__text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #000000;
+    }
+    .orange{
+        color: #F7654A;
+    }
+    
+}
+/*CONTACTS styles end*/
+
+/*FOOTER styles start*/
+.footer {
+    background: #404149;
+    font-family: $font-family-text;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 100%;
+
+    // .footer__content
+    &__content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0px;
+    }
+    // .footer__copyright
+    &__copyright {        
+    }
+    // .footer__studia
+    &__studia {
+    }
+}
+/*FOOTER styles start*/
