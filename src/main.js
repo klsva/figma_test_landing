@@ -5,7 +5,7 @@ import '@fortawesome/fontawesome-free/js/regular'
 import '@fortawesome/fontawesome-free/js/brands'
 import './js/img'
 import * as $ from 'jquery'
-import 'slick-carousel'
+//import 'slick-carousel'
 
 //func places <img> in background-image 
 function ibg(){
