@@ -114,10 +114,16 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #404149;
+    @media (max-width:800px) {
+        font-size: 32px;
+        line-height: 48px;
+
+    }
 }
 .hidden{
     opacity: 0;
 }
+
 @media (max-width:730px){
     body.lock{
         overflow: hidden;
@@ -517,6 +523,7 @@ img {
         &__content {
             flex-direction: column;
             justify-content: center;
+            text-align: center;
         }
         &__button > button {
             margin-bottom: 60px;
@@ -723,8 +730,16 @@ img {
     // .partners__logo
     &__logo {
     }
-    @media (max-width:800px) {
+    @media (max-width:990px) {
         margin-bottom: 60px;
+        &__content {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+        }
+        &__logo {
+            margin-bottom: 30px;
+        }      
     }
 }
 /*PARTNERS styles end*/
@@ -800,6 +815,7 @@ img {
     margin-bottom: 100px;
     @media (max-width:800px) {
         margin-bottom: 60px;
+        text-align: center;
     }
 }
 /*REQUEST SECOND styles end*/
@@ -828,12 +844,17 @@ img {
         //text-align: center;
     }
     @media (max-width:800px) {
-        margin-bottom: 60px;
-        &__content {
-            flex-direction: column;
+        margin-bottom: 0px;
+        &__block {
+            width: 50%;
+            margin-bottom: 60px;
+            //text-align: center;
         }
+    }
+    @media (max-width:450px) {
         &__block {
             width: 100%;
+            margin-bottom: 60px;
             //text-align: center;
         }
     }
@@ -882,7 +903,9 @@ img {
         color: #F7654A;
     }
     @media (max-width:800px) {
-        flex-direction: row;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
     }
     
 }
