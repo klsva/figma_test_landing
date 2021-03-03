@@ -25,6 +25,7 @@ $( document ).ready(function() {
         $('.icon-submenu').toggleClass('active');
         $('.submenu__body').toggleClass('active');
         $('.submenu__list').toggleClass('hidden');
+        $('body').toggleClass('lock');
 
     });
 
